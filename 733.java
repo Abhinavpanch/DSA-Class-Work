@@ -6,7 +6,7 @@ class Solution {
     }
 
     public void solve(int[][] image, int sr, int sc, boolean[][] vis, int color, int orgClr){
-        if(sr<0 || sc<0 || sr>=image.length || sc>=image.length || image[sr][sc] != orgClr || vis[sr][sc]){
+        if(sr<0 || sc<0 || sr>=image.length || sc>=image[0].length || image[sr][sc] != orgClr || vis[sr][sc]){
             return;
         }
 
